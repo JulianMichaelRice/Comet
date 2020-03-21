@@ -1,0 +1,95 @@
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+body {
+    background-color: #383838;
+}
+@keyframes up {
+    0% { top: 1000px; }
+    100% { top: 0px; }
+}
+@keyframes left {
+    0% { left: 1500px; }
+    100% { left: 0px; }
+}
+@keyframes right {
+    0% { left: -1500px; }
+    100% { left: 0px; }
+}
+.goup {
+    animation-name: up;
+    animation-duration: 1.5s;
+    position: relative;
+}
+.fbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    z-index: 10;
+    justify-content: center;
+}
+.fbox h1, .fbox h2 {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+.dropbelow {
+    animation-name: down;
+    animation-duration: 2s;
+    position: relative;
+}
+.slide-l {
+    animation-name: left;
+    animation-duration: 2s;
+    position: relative;
+}
+.slide-r {
+    animation-name: right;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes down {
+    0% { top: -70px; }
+    100% { top: 0px; }
+}
+img {
+    background-size: cover;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+#fullpage {
+    z-index: 2;
+}
+.bg1 {
+    background: url("img/comet_1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.bg2 {
+    background: url("img/comet_side.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.bg3 {
+    background: url("img/comet_opened_t.jpg");
+    background-size: cover;
+    background-position: center;
+}
