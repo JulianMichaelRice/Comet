@@ -79,17 +79,17 @@ img {
     z-index: 2;
 }
 .bg1 {
-    background: url("img/comet_1.jpg");
+    background: url("img/table_light.png");
     background-size: cover;
     background-position: center;
 }
 .bg2 {
-    background: url("img/comet_side.jpg");
+    background: url("img/table_lid_close.png");
     background-size: cover;
     background-position: center;
 }
 .bg3 {
-    background: url("img/comet_opened_t.jpg");
+    background: url("img/table_touch.png");
     background-size: cover;
     background-position: center;
 }
