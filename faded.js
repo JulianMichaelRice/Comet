@@ -8,7 +8,7 @@ $(document).on("scroll", function () { //Using the scroll global variable
             $(now).addClass("fadefade");
         }
         else {
-            $(now).removeClass("hidden");
+            $(now).removeClass("fadefade");
         }
     }
 });

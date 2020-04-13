@@ -70,7 +70,7 @@
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; transform: scale(1.1); filter: blur(200px);  }
+    0% { opacity: 0; transform: scale(1.1); filter: blur(100px);  }
     50% { opacity: 0.2; transform: scale(1.1); filter: blur(0px) brightness(100%); }
     /* 50% {opacity: 0.7; transform: scale(0.8);} */
     100% {opacity: 1; transform: scale(1); filter: blur(0px) brightness(150%); }
@@ -82,7 +82,7 @@
     100% {opacity: 1; transform: scale(1); filter: blur(0px); }
 }
 @keyframes fadeIn4 {
-    0% { opacity: 0; transform: scale(1.1); filter: blur(200px);  }
+    0% { opacity: 0; transform: scale(1); filter: blur(100px);  }
     100% {opacity: 1; transform: scale(1); filter: blur(0px); }
 }
 img {
@@ -145,7 +145,7 @@ img {
 }
 .fadefade {
     visibility: visible;
-    animation: fadeIn4 ease 4s forwards;
+    animation: fadeIn4 ease 3s forwards;
 }
 .bg3n {
     background: url("img/concept2n.png");
