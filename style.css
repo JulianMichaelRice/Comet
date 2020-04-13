@@ -81,6 +81,10 @@
     /* 50% {opacity: 0.7; transform: scale(0.8);} */
     100% {opacity: 1; transform: scale(1); filter: blur(0px); }
 }
+@keyframes fadeIn4 {
+    0% { opacity: 0; transform: scale(1.1); filter: blur(200px);  }
+    100% {opacity: 1; transform: scale(1); filter: blur(0px); }
+}
 img {
     background-size: cover;
 }
@@ -105,31 +109,64 @@ img {
 #fullpage {
     z-index: 2;
 }
+
 .bg1 {
     background: url("img/concept3.jpg");
     background-size: cover;
     background-position: center;
-    animation: fadeIn ease 5s;
+    animation: fadeIn ease 5s forwards;
     filter:brightness(150%);
 }
 .spacer {
     padding-bottom: 0px;
 }
 .bg2 {
-    background: url("img/bg2.jpg");
-    background-size: cover;
+    background: url("img/bg2n.jpg");
+    background-size: contain;
     background-position: center;
-    animation: fadeIn2 ease 5s;
+    background-repeat: no-repeat;
+}
+.bg2n {
+    background: url("img/bg2n.png"); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bgn {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .bg3 {
-    background: url("img/concept2.jpg");
-    background-size: cover;
+    background: url("img/concept2n.jpg");
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+}
+.fadefade {
+    visibility: visible;
+    animation: fadeIn4 ease 4s forwards;
+}
+.bg3n {
+    background: url("img/concept2n.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .bg4 {
-    background: url("img/bg3.jpg");
-    background-size: cover;
+    background: url("img/bg3n.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+}
+.hidden {
+    visibility: hidden;
+}
+.bg4n {
+    background: url("img/bg3n .png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .parent {
     width: 50vw;
@@ -151,6 +188,6 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
-    background-color: #444444;
+    /* overflow-x: hidden; */
+    background-color: #111111;
 }
