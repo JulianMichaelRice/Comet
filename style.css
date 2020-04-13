@@ -2,16 +2,29 @@
     padding-right: 0;
     padding-left: 0;
 }
-body {
-    background: linear-gradient(0.40turn, #222222, #000022, #222222);
-}
+/* body {
+     /*linear-gradient(0.00turn, #444444, #222222, #444444);
+} */
 @keyframes up {
     0% { top: 1000px; }
     100% { top: 0px; }
 }
 @keyframes left {
-    0% { left: 1500px; }
-    100% { left: 0px; }
+    0% { 
+        opacity: 0;
+        transform: scale(0.5);
+        /* left: 1500px;  */
+    }
+    50% {
+        opacity: 0;
+        transform: scale(0.5);
+        /* left: 1500px;  */
+    }
+    100% { 
+        /* left: 0px; */
+        transform: scale(1);
+        opacity: 1; 
+    }
 }
 @keyframes right {
     0% { left: -1500px; }
@@ -57,9 +70,16 @@ body {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; transform: scale(0.5); }
+    0% { opacity: 0; transform: scale(1.1); filter: blur(200px);  }
+    50% { opacity: 0.2; transform: scale(1.1); filter: blur(0px) brightness(100%); }
     /* 50% {opacity: 0.7; transform: scale(0.8);} */
-    100% {opacity: 1; transform: scale(1); }
+    100% {opacity: 1; transform: scale(1); filter: blur(0px) brightness(150%); }
+}
+@keyframes fadeIn2 {
+    0% { opacity: 0; transform: scale(1.1); filter: blur(200px);  }
+    50% { opacity: 0.2; transform: scale(1.1); filter: blur(0px); }
+    /* 50% {opacity: 0.7; transform: scale(0.8);} */
+    100% {opacity: 1; transform: scale(1); filter: blur(0px); }
 }
 img {
     background-size: cover;
@@ -70,7 +90,7 @@ img {
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+    background: #444444;
 }
 .navbar-nav {
     float:none;
@@ -86,18 +106,51 @@ img {
     z-index: 2;
 }
 .bg1 {
-    background: url("img/table_light.png");
+    background: url("img/concept3.jpg");
     background-size: cover;
     background-position: center;
-    animation: fadeIn ease 7s;
+    animation: fadeIn ease 5s;
+    filter:brightness(150%);
+}
+.spacer {
+    padding-bottom: 0px;
 }
 .bg2 {
-    background: url("img/table_lid_close.png");
+    background: url("img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn2 ease 5s;
+}
+.bg3 {
+    background: url("img/concept2.jpg");
     background-size: cover;
     background-position: center;
 }
-.bg3 {
-    background: url("img/table_touch.png");
+.bg4 {
+    background: url("img/bg3.jpg");
     background-size: cover;
     background-position: center;
+}
+.parent {
+    width: 50vw;
+    height: 50vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top {
+    align-self: flex-start;
+}
+.bottom {
+    align-self: flex-end;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-color: #444444;
 }
